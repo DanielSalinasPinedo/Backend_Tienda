@@ -69,7 +69,7 @@ export const deleteProducto = async (req, res) => {
         if (checkResult.length > 0) {
             
             return res.status(400).json({
-                message: 'El producto está asociado a una venta y no se puede eliminar.'
+                message: 'El producto está asociado a una venta y no es posible eliminarlo'
             });
         }
         
